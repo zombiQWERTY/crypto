@@ -23,13 +23,10 @@
 		"browser-sync"           : "latest",
 
 		"crypto-js"              : "latest",
-
+		"browser-filesaver"      : "latest",
 		"jbone"                  : "latest",
-		"reqwest"                : "latest",
-		"simply-deferred"        : "latest",
 		"underscore"             : "latest",
 		"backbone"               : "latest",
-		"browser-filesaver"      : "latest",
 		"fastclick"              : "latest"
 	}
 }
