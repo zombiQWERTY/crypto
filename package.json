@@ -1,0 +1,35 @@
+{
+	"name": "Crypto",
+	"version": "1.0.0",
+	"repository": "",
+	"description": "",
+	"main": "Gulpfile.js",
+	"author": "zombiQWERTY",
+	"license": "MIT",
+	"browserify": {
+		"transform": ["coffeeify"]
+	},
+	"devDependencies": {
+		"browserify"             : "latest",
+		"coffeeify"              : "latest",
+		"watchify"               : "latest",
+		"gulp"                   : "latest",
+		"gulp-uglify"            : "latest",
+		"gulp-minify-css"        : "latest",
+		"gulp-image-optimization": "latest",
+		"gulp-compass"           : "latest",
+		"vinyl-source-stream"    : "latest",
+		"gulp-streamify"         : "latest",
+		"browser-sync"           : "latest",
+
+		"crypto-js"              : "latest",
+
+		"jbone"                  : "latest",
+		"reqwest"                : "latest",
+		"simply-deferred"        : "latest",
+		"underscore"             : "latest",
+		"backbone"               : "latest",
+		"browser-filesaver"      : "latest",
+		"fastclick"              : "latest"
+	}
+}

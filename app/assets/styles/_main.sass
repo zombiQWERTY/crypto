@@ -1,0 +1,78 @@
+.steps
+	+transition(top 400ms)
+
+.step
+	height: 100%
+	position: relative
+	&__content
+		+block-center
+		text-align: center
+		width: 100%
+	h1, h2
+		font-weight: 400
+	h1
+		font-size: 48px
+		margin-bottom: 20px
+	h2
+		font-size: 14px
+		font-family: Arial, Helvetica, sans-serif
+		margin-bottom: 45px
+		font-style: italic
+
+.back
+	+box(32px, 32px)
+	+opacity(0.8)
+	background: url("../images/icons.svg") no-repeat -192px 0
+	position: absolute
+	cursor: pointer
+	top: 50px
+	left: 50%
+	z-index: 100
+	margin-left: -16px
+	display: none
+	&:hover
+		+opacity(1)
+
+.step
+	&-one
+		background-color: #75c0d1
+	&-two
+		&_encrypt
+			background-color: #9ad58c
+			.step__content_decrypt
+				display: none
+		&_decrypt
+			background-color: #e7a8d1
+			.step__content_encrypt
+				display: none
+	&-three
+		background-color: #d5d788
+		.step__content
+			display: none
+		&_encrypt
+			.step__content_encrypt
+				display: block
+		&_decrypt
+			.step__content_decrypt
+				display: block
+		input[type="password"]
+			+inline-block
+			+border-radius(2px)
+			+box-shadow(3px 3px 0 rgba(#000, .05))
+			background-color: #fff
+			border: none
+			padding: 8px 18px
+			line-height: 1
+			font: inherit
+			width: 400px
+			margin-bottom: 18px
+			font-size: 36px
+			color: #555
+	&-four
+		background-color: #aa8cd8
+		&_encrypt
+			.step__header_decrypt
+				display: none
+		&_decrypt
+			.step__header_encrypt
+				display: none

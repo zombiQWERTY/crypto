@@ -1,0 +1,26 @@
+@mixin box($width, $height)
+	width: $width
+	height: $height
+
+@mixin last-margin()
+	&:last-child
+		margin-bottom: 0
+
+@mixin block-center()
+	+translate(-50%, -50%)
+	position: absolute
+	left: 50%
+	top: 50%
+
+@mixin block-h-center()
+	+translate(-50%, 0)
+	position: absolute
+	left: 50%
+
+@mixin max-screen($res)
+	@media screen and (max-width: $res)
+		@content
+
+@mixin min-screen($res)
+	@media screen and (min-width: $res)
+		@content
