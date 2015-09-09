@@ -110,13 +110,7 @@ gulp.task("serve", ["compass", "browserify", "html", "images", "uploads"], funct
 
 	gulp.watch("./app/uploads/**/*", ["uploads"]).on("change", browserSync.reload);
 
-	browserSync.watch(pathes.dest.styles + "/**/*.css", function (event, file) {
-		if (event === "change") {
-			browserSync.reload();
-		}
-	});
-
-	browserSync.watch(pathes.dest.scripts + "/**/*.js", function (event, file) {
+	browserSync.watch([pathes.dest.styles + "/**/*.css", pathes.dest.scripts + "/**/*.js"], function (event, file) {
 		if (event === "change") {
 			browserSync.reload();
 		}
