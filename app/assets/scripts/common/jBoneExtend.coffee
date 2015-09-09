@@ -2,13 +2,8 @@
 
 _        = require "underscore"
 jBone    = require "jbone"
-reqwest  = require "reqwest"
-Deferred = require "simply-deferred"
 
 module.exports = ->
-
-	jBone.ajax = reqwest.compat
-	Deferred.installInto jBone
 
 	jBone.fn.fadeIn = (time = 9, display = "block", callback = ->) ->
 		el = @
