@@ -50,7 +50,7 @@ module.exports = ->
 			styles  = el.style
 			styles.opacity = 1
 			fade = ->
-				if (styles.opacity -= parseFloat(".0#{time}")) < 0
+				if (styles.opacity -= parseFloat(".0#{time}")) < 0.1
 					styles.display = "none"
 					callback()
 				else
