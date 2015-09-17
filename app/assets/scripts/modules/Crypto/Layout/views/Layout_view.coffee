@@ -3,6 +3,7 @@
 $               = require "jbone"
 _               = require "underscore"
 Backbone        = require "backbone"
+BlobPolyfill    = require "blob-polyfill"
 
 Layout_template = require "modules/Crypto/Layout/templates/Layout_template.coffee"
 
@@ -53,6 +54,7 @@ module.exports = Backbone.View.extend
 		try
 			isFileSaverSupported = !!new Blob
 		catch e
+			new BlobPolyfill
 			new Alert
 				text: "Обновите браузер. " + e
 				type: "warning"

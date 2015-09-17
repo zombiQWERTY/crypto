@@ -81,7 +81,7 @@ module.exports = Backbone.View.extend
 						text: "Файл выбран и скоро будет дешифрован."
 						type: "info"
 					Reader = new FileReader
-					Reader.readAsDataURL files[0]
+					Reader.readAsText files[0]
 					Reader.onload = (event) ->
 						privateKey = openpgp.key.readArmored(self.privateKey).keys[0]
 						privateKey.decrypt self.key

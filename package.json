@@ -1,6 +1,6 @@
 {
 	"name": "Crypto",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"repository": "",
 	"description": "",
 	"main": "Gulpfile.js",
@@ -22,7 +22,8 @@
 		"gulp-streamify"         : "latest",
 		"browser-sync"           : "latest",
 
-		"crypto-js"              : "latest",
+		"openpgp"                : "latest",
+		"blob-polyfill"          : "latest",
 		"browser-filesaver"      : "latest",
 		"jbone"                  : "latest",
 		"underscore"             : "latest",

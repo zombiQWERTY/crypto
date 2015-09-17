@@ -8,6 +8,7 @@ Layout_view     = require "modules/Crypto/Layout/views/Layout_view.coffee"
 Key_view        = require "modules/Crypto/Key/views/Key_view.coffee"
 Decrypt_view    = require "modules/Crypto/Decrypt/views/Decrypt_view.coffee"
 Action_template = require "modules/Crypto/Action/templates/Action_template.coffee"
+Filesaver = require "browser-filesaver"
 
 module.exports = Backbone.View.extend
 
